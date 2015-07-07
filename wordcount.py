@@ -7,12 +7,12 @@ def count_words(file_name):
         occurs. The function then prints this info to stdout. The function returns None.
     """
     #Open a file
-    file = open(file_name)
+    text = open(file_name)
 
     word_count = {}
 
     #Count how many times each space-separated word occurs in the file
-    for line in file:
+    for line in text:
         words = line.split(" ")
         for word in words:
             # If the word is already in word_count, increment count
