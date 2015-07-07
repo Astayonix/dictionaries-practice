@@ -20,9 +20,9 @@ def count_words(file_name):
             word_count[word.rstrip()] = word_count.get(word, 0) + 1
 
     #Print word counts to stdout
-    for w, n in word_count.items():
+    for w, n in word_count.iteritems():
         print "%s %d" % (w, n)
 
 
 
-count_words('test.txt')
+count_words('twain.txt')
